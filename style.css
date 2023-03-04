@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ruda";
+}
+nav {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 1vw 5vw; /* 10px 50px */
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+nav #insta {
+  width: 3vw;
+  height: 3vw;
+  padding-top: 1vw;
+}
+nav #fb {
+  width: 3.5vw;
+  height: 3vw;
+  padding-top: 1vw;
+}
+nav #whatsapp {
+  width: 3vw;
+  height: 3.1vw;
+  padding-top: 1.2vw;
+}
+.menu-bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  column-gap: 1.5vw;
+}
+.social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav a:hover {
+  color: #f24c4c;
+}
+.social a:hover {
+  transform: scale(1.2);
+  transition: 0.3s linear;
+}
+#logo {
+  font-size: 2.1vw;
+  font-weight: 700;
+}
+h1:hover {
+  transition: 0.5s linear all;
+  transform: scale(1.1);
+}
+.carousels {
+  position: relative;
+}
+.carousels .main-image {
+  width: 98.9vw;
+  height: 60vw;
+}
+.carousels .img-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 98.9vw;
+  height: 70vw;
+}
+.tagline {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  position: absolute;
+  top: 100px;
+  color: #ffffff;
+  margin-left: 3vw;
+  padding: 7vw;
+  width: 50vw;
+  row-gap: 7vw;
+}
+.tagline h2 {
+  font-family: "Quattrocento";
+  font-style: normal;
+  font-size: 6vw;
+  font-weight: 600;
+  color: #ffffff;
+}
+.tagline p,
+.contents p {
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.7vw;
+  color: white;
+  width: 40vw;
+  letter-spacing: 0.09em;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  height: 0.8vw;
+  background-color: #f24c4c;
+  left: 7vw;
+  right: 20vw;
+  top: 23vw;
+}
+.contents {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: -1vw;
+  padding: 5vw 10vw;
+  row-gap: 5vw;
+  position: relative;
+}
+h3 {
+  font-family: "Quattrocento";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3vw;
+}
+h3::after {
+  content: "";
+  position: absolute;
+  background-color: #b62828;
+  height: 0.4vw;
+  top: 9vw;
+  left: 35vw;
+  right: 35vw;
+}
+.pizza-dough {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto;
+  column-gap: 4vw;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+.pizza-dough img {
+  width: 40vw;
+  height: 35vw;
+}
+.contents p {
+  width: 100%;
+  line-height: 2.5vw;
+}
+.pizza-dough p::after {
+  content: "";
+  position: absolute;
+  background-color: #b62828;
+  height: 0.2vw;
+  top: 3vw;
+  left: 0;
+  right: 45vw;
+}
+.item > img {
+  width: 15vw;
+  height: 15vw;
+}
+.details {
+  width: 20vw;
+  height: auto;
+  padding-top: 10px;
+}
+.details > p {
+  font-size: 1vw;
+}
+.catalog {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 3vw;
+}
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 2vw;
+  align-items: flex-start;
+}
+h4 {
+  color: #f2c94c;
+  font-weight: 400;
+}
+.location > img {
+  width: 2vw;
+  height: 2vw;
+}
+.contact-us {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 1vw;
+}
+.contact-us > p {
+  font-size: 1.2vw;
+  width: 28vw;
+}
+.geo-pin p::after {
+  height: 0;
+}
+.location {
+  display: flex;
+  align-items: center;
+  column-gap: 1vw;
+}
+.location > p,
+.phone-number > p {
+  font-size: 1vw;
+}
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 5vw 5vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.phone-mail {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 2vw;
+  padding-right: 15vw;
+}
+html {
+  background-color: #000000;
+}
